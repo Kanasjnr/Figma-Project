@@ -1,0 +1,384 @@
+/* FOR DESKTOPS */
+@media (max-width: 1280px) {
+  /* HEADER AND NAV */
+  .header {
+    padding: 34px 25px;
+    height: 101px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .mainNav {
+    display: none;
+  }
+
+  .navBtn {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .mainNav {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    transform: translateX(100%);
+  }
+
+  .mainNavList {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .nav-open .mainNav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  /* HERO SECTION */
+  .heroSection {
+    margin-top: 10rem;
+    background-image: url(/img/heroTablet.svg);
+  }
+
+  .heroText,
+  .heroSubTitle {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .heroTitle {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .heroBtn .btn {
+    width: 237px;
+    height: 47px;
+    font-size: 20px;
+  }
+
+  /* ABOUT SCETION */
+
+  .aboutSection {
+    padding: 0 34px;
+    margin: 195px 0 74px;
+  }
+
+  .aboutSection .gridCard {
+    grid-column-gap: 99px;
+    width: auto;
+  }
+
+  .aboutSection .gridCard .atm2 {
+    display: none;
+  }
+
+  .aboutSection .gridItem .atmTablet {
+    display: inline;
+  }
+
+  .aboutSection .gridItem button {
+    font-family: "Syne", sans-serif;
+    width: 284px;
+    height: 47px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .aboutImg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutSection .gridItemText h3 {
+    width: 278px;
+    font-size: 20px;
+    font-family: "Syne", sans-serif;
+  }
+
+  .aboutSection .gridItemText p {
+    font-size: 16px;
+    width: 321px;
+    font-weight: 400;
+    margin-bottom: 84px;
+  }
+
+  /* LEARN MORE BUTTON */
+  .aboutSection .learnMore {
+    grid-column-gap: 78px;
+  }
+
+  /* .learnMore .gridItem img {
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+  } */
+
+  .aboutSection .gridItemText .learnMoreBtn {
+    width: 147px;
+    height: 47px;
+  }
+}
+
+/* LARGE TABLETS/LAPTOP */
+
+@media (max-width: 991px) {
+  .heroSection {
+    height: auto;
+    padding-bottom: 194px;
+  }
+
+  .aboutSection {
+    padding: 0 34px;
+    margin: 74px 0;
+  }
+
+  .aboutSection .gridCard {
+    grid-column-gap: 40px;
+  }
+
+  .aboutSection .learnMore {
+    grid-column-gap: 28px;
+  }
+
+  .aboutSection .learnMore .gridItemText P {
+    width: 90%;
+    margin-bottom: 45px;
+  }
+/* FOOTER SECTION */
+  .footerSection {
+    font-size: 26px;
+    padding: 80px 228px 57px 41px;
+    height: auto;
+  }
+
+  .footerSection .footerLink {
+    font-size: 16px;
+    width: 100px;
+  }
+}
+
+/* SMALL TABLETS */
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .navBtn {
+    font-size: 16px;
+  }
+  .btn,
+  .btnlink,
+  .btn:visited {
+    width: 100px;
+    height: 47px;
+  }
+/* ABOUT SECTION */
+  .aboutSection {
+    margin: 54px 0;
+  }
+  .aboutSection .addWallet .gridItemText,
+  .aboutSection .learnMore .gridItemText {
+    margin-top: 42px;
+  }
+.aboutSection .learnMore .gridItemText{
+  place-items: center;
+}
+  .aboutSection .gridCard p,
+  .aboutSection .gridCard h3 {
+    width: 100%;
+  }
+
+  .aboutSection .gridCard {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 42px 78px 15px;
+  }
+
+  .aboutSection .gridItemText h3 {
+    width: auto;
+  }
+
+  .heroSection {
+    padding-bottom: 44px;
+  }
+  /* FOOTER SECTION */
+  .footerSection {
+    width: 100%;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 88px;
+  }
+}
+
+@media (max-width: 540px) {
+  .mainNav {
+    width: 100%;
+  }
+
+  .mainNav .navBtn {
+    display: flex;
+    flex-direction: column;
+  }
+  .navBtn {
+    display: none;
+  }
+
+  .nav-open .mainNav,
+  .navBtn {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .footerSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 81px;
+  }
+
+  .heroSection {
+    background-image: url(/img/phoneBg.svg);
+  }
+/* ABOUT SECTION */
+  .aboutSection {
+    margin: 0;
+    padding: 0;
+    border-radius: 1;
+  }
+
+  .aboutSection .gridCard {
+    margin-top: 54px;
+    padding: 0 32px 63px;
+    background-color: #fff;
+    text-align: left;
+  }
+
+  .aboutSection .gridItemCard {
+    flex-direction: column-reverse;
+    row-gap: 60px;
+    order: 2;
+  }
+
+  .aboutSection .gridItem button {
+    background: #9fb7b9;
+  }
+
+  .aboutSection .gridCard p,
+  .aboutSection .gridCard h3 {
+    margin-bottom: 15px;
+  }
+
+  .aboutSection .learnMore {
+    height: 598px;
+    gap: 0;
+    padding-bottom: 0;
+  }
+
+  .aboutSection .learnMore .atmTablet {
+    position: relative;
+    top: -60px;
+  }
+
+  .aboutSection .learnMoreCard .gridItem {
+    flex-direction: column-reverse;
+    order: 2;
+  }
+
+
+  .aboutSection .gridItemText .learnMoreBtn {
+    margin-top: 0;
+  }
+
+  button :nth-child(2) {
+    display: inline-block;
+  }
+
+  button :nth-child(1) {
+    display: none;
+  }
+}
+ @media (max-width: 375px) {
+
+  .header {
+    padding: 14px 12px;
+  }
+
+  .aboutSection .gridCard {
+    margin-top: 14px;
+    padding: 0 22px 33px;
+  }
+  .heroBtn .btn {
+    width: 207px;
+    height: 37px;
+    font-size: 16px;
+  }
+
+  .aboutSection .gridItem button {
+    width: 217px;
+    height: 47px;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+ }
+
+ @media (max-width: 280px) {
+  .aboutSection .gridItem .aboutImg {
+    width: 247px;
+    height: 169px;
+  }
+
+  .aboutSection .gridItem .atmTablet {
+    width: 267px;
+    height: 370px;
+  }
+  /* FOOTER SECTION */
+.footerSection{
+  padding: 14px 12px;
+  font-size: 16px;
+  gap: 8px;
+}
+.footerSection h4{
+  margin-bottom: 24px;
+}
+  .footerSection .footerLink{
+    width: auto;
+  }
+ }

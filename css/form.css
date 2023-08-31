@@ -1,0 +1,106 @@
+
+/* FORM CONTAINER */
+header{
+    padding: 42px 98px;
+}
+.formLogo {
+    display: flex;
+    width: 263px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 42px;
+    margin-left: 100px;
+  }
+
+  .formSect {
+    background: #f2feff;
+    /* width: 1728px; */
+  }
+  
+  .signForm .headerTag {
+    color: #1c1c1c;
+    text-align: center;
+    font-family: "Syne", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5rem;
+  }
+  .signForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  form label {
+    display: block;
+    color: #1c1c1ccc;
+    font-family: Sofia Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  input {
+    border-radius: 3px;
+    border: 1px solid #1c1c1cb3;
+    opacity: 0.6;
+    background: #fff;
+    width: 276px;
+    height: 73px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .formTag {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  button {
+    display: flex;
+    width: 564px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #0539ff;
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  button :nth-child(2) 
+  {
+    display: none;
+  }
+  
+  button p {
+    color: #ffffffcc;
+    text-align: center;
+    font-family: "Syne", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  
+
+  /* Tablets */
+  @media (max-width:768) {
+    .formTag{
+        grid-template-columns: 1fr;
+    }
+    button{
+        width: 254px;
+    }
+  }
+
+
+
+  @media (max-width:375px) {
+
+  }
